@@ -16,3 +16,4 @@ class Diagnostico:
     def __init__(self, pessoa, febre):
         self.pessoa = pessoa
         self.febre = febre
+#teste
