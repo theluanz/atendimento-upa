@@ -65,3 +65,4 @@ class Cpf:
 
 print (Cpf().format('08701173944'))
 print (Cpf().validate('08701173944'))
+#test
