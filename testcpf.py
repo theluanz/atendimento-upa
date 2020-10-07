@@ -16,6 +16,8 @@ class Cpf:
         912.890.377-36
         """
         return "%s.%s.%s-%s" % ( cpf[0:3], cpf[3:6], cpf[6:9], cpf[9:11] )
+    
+
 
     def validate( self, cpf ):
         """ 
@@ -61,6 +63,8 @@ class Cpf:
         
         
         return bool( cpf == selfcpf )
+    def printar(self):
+        print("teste")
 
 
 print (Cpf().format('08701173944'))
