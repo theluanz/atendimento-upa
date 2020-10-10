@@ -3,7 +3,7 @@ from pessoa import Pessoa
 class Tree: 
     #construtor
     def __init__(self, Pessoa, pai=None, mae=None):
-        self.pesssoa = Pessoa
+        self.pessoa = Pessoa
         self.pai = pai
         self.mae = mae
 
@@ -15,10 +15,10 @@ class Tree:
     #mostra todas as gerações
     def mostrarTodaGeracao(self):
         if self.pai:
-            print(self.pai.pesssoa.nome)
+            print(self.pai.pessoa.nome)
             self.pai.mostrarTodaGeracao()
         if self.mae:
-            print(self.mae.pesssoa.nome)
+            print(self.mae.pessoa.nome)
             self.mae.mostrarTodaGeracao()
 
             
