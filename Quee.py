@@ -49,7 +49,7 @@ class Quee:
             print("")
         return self.vetor[int(input("Digite o index correspondente"))]
 
-
+'''
 pessoa = Pessoa("eu", "sexo",1, 1, 12, 32, 121, "ctsus", "zap" )
 pai = Pessoa("pai", "sexo",12, 12, 12, 32, 121, "ctsus", "a" )
 mae = Pessoa("mae", "sexo",123, 123, 12, 32, 121, "ctsus", "febre" )
@@ -77,3 +77,4 @@ filadePessoas.printarTodos()
 
 #Exemplo de função pra retornar as gerações que eu fiz na Arvore
 filadePessoas.searchByIndex().mostrarTodaGeracao()
+'''
