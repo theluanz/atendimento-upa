@@ -1,3 +1,5 @@
+import os
+
 class Stack:
     def __init__(self):
         self.vetor = []
@@ -10,15 +12,13 @@ class Stack:
         else:
             print("Pilha Vazia, não é possivel tocar")
     def tocar(self, link):
-        print(link)
-    
+        os.system("xdg-open {}".format(link))    
 '''
 #Dessa forma voce cria um variavel da classe Stack
 classePilha = Stack()
 #Dessa forma voce insere um link
-classePilha.inserir("linkkkkkkkkkkkkkk")
-classePilha.inserir("linkkkkkkkkkkkkkk2")
+classePilha.inserir("https://www.youtube.com/watch?v=d-GgZpCtBXw")
+classePilha.inserir("https://www.youtube.com/watch?v=xL-Mdet-cow")
 #Dessa forma voce exclui e faz tocar um valor
-classePilha.excluir()
 classePilha.excluir()
 '''
