@@ -9,6 +9,7 @@ from pessoa import Pessoa
 from Stack import Stack
 
 option = 0
+space = ("-"*32)
 
 while option != 6:
 
