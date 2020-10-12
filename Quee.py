@@ -7,7 +7,6 @@ class Quee:
         self.vetor.append(TreePessoa)
     def inserirPrioritario(self, TreePessoa):
         isFebre= True if 'febre' in TreePessoa.pessoa.sintomas else False
-        print(isFebre)
         if isFebre:
             tmp=0
             for x in self.vetor:

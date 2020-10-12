@@ -67,6 +67,7 @@ while option != 6:
         time.sleep(0.5)
         #cpf = int(input("Digite o CPF a ser consultado: "))
         filadePessoas.printarTodos()
+        filaPrioritaria.printarTodos()
 
     elif option == 3:
         filadePessoas.atender(filaPrioritaria)
