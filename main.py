@@ -72,9 +72,9 @@ while option != 6:
         filadePessoas.atender(filaPrioritaria)
         time.sleep(1.5)
     elif option == 4:#usando a opçao 4 so para testar
+        database.searchByIndex().addPais(pai, mae)
         pai = database.searchByIndex()
         mae = database.searchByIndex()
-        database.searchByIndex().addPais(pai, mae)
     #elif option == 5:
 
     elif option == 6:
