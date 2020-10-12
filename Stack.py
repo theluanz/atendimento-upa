@@ -3,6 +3,7 @@ import os
 class Stack:
     def __init__(self):
         self.vetor = []
+
     def inserir(self, link):    
         self.vetor.append(link)
     def excluir(self):
@@ -17,8 +18,8 @@ class Stack:
 #Dessa forma voce cria um variavel da classe Stack
 classePilha = Stack()
 #Dessa forma voce insere um link
-classePilha.inserir("https://www.youtube.com/watch?v=d-GgZpCtBXw")
-classePilha.inserir("https://www.youtube.com/watch?v=xL-Mdet-cow")
+classePilha.inserir("https://www.youtube.com/watch?v=xL-Mdet-cow)
+classePilha.inserir(" https://www.youtube.com/watch?v=xL-Mdet-cow")
 #Dessa forma voce exclui e faz tocar um valor
 classePilha.excluir()
 '''
