@@ -23,12 +23,18 @@ class Quee:
             self.vetor.append(TreePessoa)
             
     
-    def excluir(self):
-        if self.vetor:    
+    def atender(self, Quee):
+        if Quee.vetor:
+            print("entrou")    
+            print("Atendimento de agora: "+Quee.vetor[0].pessoa.nome)
+            del Quee.vetor[0]
+        elif self.vetor:
             print("Atendimento de agora: "+self.vetor[0].pessoa.nome)
-            del self.vetor[0]
+            del self.vetor[0]    
         else:
-            print("Fila Vazia")
+            print("Nenhum usuario na fila")
+    
+    
     def printarTodos(self):
         for x in self.vetor:
             print("="*50)
@@ -57,24 +63,25 @@ mae= Tree(mae)
 root = Tree(pessoa)
 root.addPais(pai, mae)
 
-'''
 #AQUI COMEÇA A LISTA:
 
 #Para criar uma varia do tipo Quee basta importar a Quee e colocar o seguinte:
 # nomeVar = Quee() // assim ele vai criar uma variavel do tipo lista
 #Detalhe, crie filas diferentes para prioritario e nao prioritario
 filadePessoas = Quee()
+filadePessoasPrioritaria = Quee()
 
 #para adicionar algum elemento basta fazer o seguinte:
 #Como parametro deve passar uma variavel do TIPO ARVORE!!! isso é importante
 filadePessoas.inserir(root)
 
 #Para a fila prioritaria use o seguinte metodo, isso somente na prioritaria
-filadePessoas.inserirPrioritario(mae)
+filadePessoasPrioritaria.inserirPrioritario(pai)
 
+#função para atender as pessoas
+filadePessoas.atender(filadePessoasPrioritaria)
 #Função pra listar todos os usuarios da fila
-filadePessoas.printarTodos()
+##filadePessoas.printarTodos()
 
 #Exemplo de função pra retornar as gerações que eu fiz na Arvore
-filadePessoas.searchByIndex().mostrarTodaGeracao()
-'''
+##filadePessoas.searchByIndex().mostrarTodaGeracao()
