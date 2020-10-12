@@ -1,7 +1,59 @@
 import time
-import random
-import math
+#import random
+#import math
+import os
 
+from BinaryTree import Tree
+from quee import Quee
+from pessoa import Pessoa
+from stack import Stack
+
+option = 0
+
+paciente = Pessoa("paciente", "sexo","99", "99", "99", "99", "99", "ctsus", "sintomas" )
+pai = Pessoa("pai", "sexo","99", "99", "99", "99", "99", "ctsus", "sintomas" )
+mae = Pessoa("mae", "sexo","99", "99", "99", "99", "99", "ctsus", "sintomas" )
+nono = Pessoa("nono", "sexo","99", "99", "99", "99", "99", "ctsus", "sintomas" )
+nona = Pessoa("nona", "sexo","99", "99", "99", "99", "99", "ctsus", "sintomas" )
+pessoa5 = Pessoa("nonamae", "sexo","99", "99", "99", "99", "99", "ctsus", "sintomas" )
+
+
+
+filadePessoas = Quee()
+filaprioritariadePessoas = Quee()
+
+paciente.nome = str(input("Qual o seu nome: "))
+paciente.sexo = str(input("Sexo\n[M]Masculino\n[F]Feminino\n "))
+paciente.cpf = str(input("CPF: "))
+paciente.rg = str(input("RG: "))
+paciente.dia = str(input("Dia Nascimento: "))
+paciente.mes = str(input("Mes Nascimento: "))
+paciente.ano = str(input("Ano Nascimento: "))
+paciente.ctsus = int(input("Cartao SUS: "))
+paciente.sintomas = str(input("Quais os sintomas: "))
+
+paciente = Tree(paciente)
+filadePessoas.inserir(paciente)
+#filadePessoas.printarTodos()
+filadePessoas.excluir()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"""
 space = ("-"*32)
 option = 0
 febre = 0
@@ -19,6 +71,7 @@ idade = 0
 
 #id = math.ceil(9999999 * random.random())
 
+"""
 time.sleep(0.5)
 print (space + "\n|        Atendimento Upa        |\n" + space +"\n")
 time.sleep(0.5)
@@ -54,7 +107,5 @@ elif option == 6:
     print("\n" + space + "\n|        Até a Proxima!        |\n" + space + "\n")
     time.sleep(1.5)
     exit()
-#test
-
 
 

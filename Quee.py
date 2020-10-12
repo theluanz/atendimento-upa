@@ -21,7 +21,7 @@ class Quee:
                 self.vetor.append(TreePessoa)
         else:
             self.vetor.append(TreePessoa)
-         
+            
     
     def excluir(self):
         if self.vetor:    
@@ -47,9 +47,8 @@ class Quee:
             print("CPF: {}".format(x.pessoa.cpf))
             tmp+=1
             print("")
-        return self.vetor[int(input("Digite o index correspondente"))]
+        return self.vetor[int(input("Digite o index correspondente: "))]
 
-'''
 pessoa = Pessoa("eu", "sexo",1, 1, 12, 32, 121, "ctsus", "zap" )
 pai = Pessoa("pai", "sexo",12, 12, 12, 32, 121, "ctsus", "a" )
 mae = Pessoa("mae", "sexo",123, 123, 12, 32, 121, "ctsus", "febre" )
@@ -58,6 +57,7 @@ mae= Tree(mae)
 root = Tree(pessoa)
 root.addPais(pai, mae)
 
+'''
 #AQUI COMEÇA A LISTA:
 
 #Para criar uma varia do tipo Quee basta importar a Quee e colocar o seguinte:

@@ -11,7 +11,7 @@ class Tree:
     def addPais(self, pai=None, mae=None):
         self.pai = pai
         self.mae = mae
-      
+    
     #mostra todas as gerações
     def mostrarTodaGeracao(self):
         if self.pai:
@@ -22,8 +22,8 @@ class Tree:
             self.mae.mostrarTodaGeracao()
 
             
-
 '''
+
 #primeiro deve-se criar uma pessoa, usando o struct do Luan C é isso, veja a sequencia
 # dos atributos no código do Luan C
 pessoa = Pessoa("eu", "sexo",1, 1, 12, 32, 121, "ctsus", "sintomas" )
@@ -51,8 +51,6 @@ root.pai.addPais(nono,nona)
 root.mae.addPais(pessoa5)
 ## Aqui chama toda a geração do root, a variavel q chama, é a q vai ser usada nesse exemplo é o ROOT
 root.mostrarTodaGeracao()
-
 '''
 
 
-    

@@ -1,5 +1,5 @@
 class Pessoa:
-    def __init__(self, nome, sexo,cpf, rg, dia, mes, ano, ctsus, sintomas ):
+    def __init__(self, nome,sexo ,cpf , rg, dia, mes, ano, ctsus, sintomas ):
         self.nome = nome
         self.sexo = sexo
         self.cpf = cpf
