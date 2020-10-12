@@ -35,7 +35,7 @@ while option != 6:
 
     option = int(input("Digite a opção desejada:\n[1] Cadastrar paciente\n[2] Consulta de paciente\n[3] Chamar proximo da fila\n[4] Adicionar a pilha do youtube\n[5] Tocar youtube\n[6] Sair\n "))
     print(option)
-    if option == 1: 
+    if option == 1: #FInalizado
 
         time.sleep(0.5)
         print ("\n" + space + "\n|     Cadastro de paciente     |\n" + space + "\n")
@@ -62,21 +62,22 @@ while option != 6:
 
         print("\n" + space + "\n|CADASTRO REALIZADO COM SUCESSO|\n" + space + "\n")
 
-    elif option == 2:
+    elif option == 2: #Finalizado
         print ("\n" + space + "\n|     Consulta de paciente     |\n" + space + "\n")
         time.sleep(0.5)
         #cpf = int(input("Digite o CPF a ser consultado: "))
         filadePessoas.printarTodos()
         filaPrioritaria.printarTodos()
 
-    elif option == 3:
+    elif option == 3: #Finalizado
         filadePessoas.atender(filaPrioritaria)
         time.sleep(1.5)
     elif option == 4:#usando a opçao 4 so para testar
         database.searchByIndex().addPais(pai, mae)
         pai = database.searchByIndex()
         mae = database.searchByIndex()
-    #elif option == 5:
+    elif option == 5:
+        
 
     elif option == 6:
         print("\n" + space + "\n|        Até a Proxima!        |\n" + space + "\n")
