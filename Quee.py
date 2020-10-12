@@ -23,12 +23,13 @@ class Quee:
             self.vetor.append(TreePessoa)
             
     
-    def atender(self, Quee):
-        if Quee.vetor:
-            print("entrou")    
-            print("Atendimento de agora: "+Quee.vetor[0].pessoa.nome)
-            del Quee.vetor[0]
+    def atender(self, quee):
+        if quee.vetor:
+            print("Atendimento Prioritário")
+            print("Atendimento de agora: "+quee.vetor[0].pessoa.nome)
+            del quee.vetor[0]
         elif self.vetor:
+            print("Atendimento Normal")
             print("Atendimento de agora: "+self.vetor[0].pessoa.nome)
             del self.vetor[0]    
         else:
@@ -54,7 +55,7 @@ class Quee:
             tmp+=1
             print("")
         return self.vetor[int(input("Digite o index correspondente: "))]
-
+'''
 pessoa = Pessoa("eu", "sexo",1, 1, 12, 32, 121, "ctsus", "zap" )
 pai = Pessoa("pai", "sexo",12, 12, 12, 32, 121, "ctsus", "a" )
 mae = Pessoa("mae", "sexo",123, 123, 12, 32, 121, "ctsus", "febre" )
@@ -73,10 +74,10 @@ filadePessoasPrioritaria = Quee()
 
 #para adicionar algum elemento basta fazer o seguinte:
 #Como parametro deve passar uma variavel do TIPO ARVORE!!! isso é importante
-filadePessoas.inserir(root)
+#filadePessoas.inserir(root)
 
 #Para a fila prioritaria use o seguinte metodo, isso somente na prioritaria
-filadePessoasPrioritaria.inserirPrioritario(pai)
+#filadePessoasPrioritaria.inserirPrioritario(pai)
 
 #função para atender as pessoas
 filadePessoas.atender(filadePessoasPrioritaria)
@@ -85,3 +86,4 @@ filadePessoas.atender(filadePessoasPrioritaria)
 
 #Exemplo de função pra retornar as gerações que eu fiz na Arvore
 ##filadePessoas.searchByIndex().mostrarTodaGeracao()
+'''
