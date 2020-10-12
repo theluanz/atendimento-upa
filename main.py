@@ -1,7 +1,8 @@
 import time
-import random
-import math
 import os
+#import random
+#import math
+
 
 from BinaryTree import Tree
 from Quee import Quee
@@ -23,6 +24,7 @@ pai.addPais(nono, nona)
 filadePessoas = Quee()
 filaPrioritaria = Quee()
 filaPrioritaria.inserir(pai)
+database = Quee()
 
 while option != 6:
 
@@ -55,19 +57,24 @@ while option != 6:
             filaPrioritaria.inserirPrioritario(treePaciente)
         else:
             filadePessoas.inserir(treePaciente)
+            database.inserir(treePaciente)
         time.sleep(0.5)
-        print("\n" + space + "\n|CADASTRO REALIZADO COM SUCESSO|\n" + space + "\n")
-      #  option = int(input("Digite a opção desejada:\n[1] Cadastrar paciente\n[2] Consulta de paciente\n[3] Chamar proximo da fila\n[4] Adicionar a pilha do youtube\n[5] Tocar youtube\n[6] Sair\n "))
 
+        print("\n" + space + "\n|CADASTRO REALIZADO COM SUCESSO|\n" + space + "\n")
 
     elif option == 2:
         print ("\n" + space + "\n|     Consulta de paciente     |\n" + space + "\n")
         time.sleep(0.5)
-        cpf = int(input("Digite o CPF a ser consultado: "))
+        #cpf = int(input("Digite o CPF a ser consultado: "))
+        filadePessoas.printarTodos()
 
     elif option == 3:
         filadePessoas.atender(filaPrioritaria)
-    #elif option == 4:
+        time.sleep(1.5)
+    elif option == 4:#usando a opçao 4 so para testar
+        pai = database.searchByIndex()
+        mae = database.searchByIndex()
+        database.searchByIndex().addPais(pai, mae)
     #elif option == 5:
 
     elif option == 6:
