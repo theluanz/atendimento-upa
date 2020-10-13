@@ -8,7 +8,6 @@ from Stack import Stack
 option = 0
 option2 = 0
 option3 = 0
-
 space = ("-"*32)
 
 filadePessoas = Quee()
@@ -23,12 +22,12 @@ while option != 6:
 
     option = int(input("Digite a opção desejada:\n[1] Cadastrar\Vincular paciente\n[2] Consulta de paciente\n[3] Chamar proximo da fila\n[4] Pesquisar Gerações\n[5] Youtube\n[6] Sair\n "))
     print(option)
-    if option == 1: #FInalizado
+
+    if option == 1: #Finalizado
         option2 = int(input("[1] Cadastrar Pessoa\n[2] Vincular pais\n "))
         time.sleep(0.5)
         if option2 == 1:
             print ("\n" + space + "\n|     Cadastro de paciente     |\n" + space + "\n")
-
             nome = str(input("Nome: "))
             sexo = str(input("Sexo\n[M]Masculino\n[F]Feminino\n "))
             cpf = str(input("CPF: "))
@@ -74,11 +73,11 @@ while option != 6:
         print("Selecione a pessoa na qual você quer ver a arvore genalogica: ")
         database.searchByIndex().mostrarTodaGeracao()
 
-    elif option == 5:
+    elif option == 5: #Finalizado
         while option3 != 3:
             print(space + "\n|       Youtube Settings       |\n" + space + "\n")
             time.sleep(0.5)
-            option3 = int(input("[1] Adicionar Video\n[2] Tocar Video\n[3] Voltar ao menu principal\n "))
+            option3 = int(input("[1] Adicionar Video\n[2] Tocar Video\n[3] Voltar ao menu principal\n "))           
             if option3 == 1:
                 url = str(input("Digite a url do video: "))
                 nomedapilha.inserir(url)
@@ -87,7 +86,12 @@ while option != 6:
 
             elif option3 == 2:
                 nomedapilha.excluir()
+
     elif option == 6: #Finalizado
         print("\n" + space + "\n|        Até a Proxima!        |\n" + space + "\n")
         time.sleep(1.5)
         exit()
+
+    else: #Finalizado
+        print(space + space + "\n|        Opção inválida, digite uma opção válida no menu       |\n" + space + space)
+        time.sleep(0.8)

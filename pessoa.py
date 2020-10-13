@@ -9,6 +9,46 @@ class Pessoa:
         self.ano = ano
         self.ctsus = ctsus
         self.sintomas = sintomas
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 """
 class Diagnostico:
     def __init__(self, pessoa, febre):

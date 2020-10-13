@@ -1,4 +1,5 @@
 import os
+space = ("-"*36)
 
 class Stack:
     def __init__(self):
@@ -11,10 +12,43 @@ class Stack:
             self.tocar(self.vetor[-1])
             del self.vetor[-1]
         else:
-            print("Pilha Vazia, não é possivel tocar")
+            print(space + "\n| Pilha Vazia não é possivel tocar |\n" + space + "\n")
+            time.sleep(0.5)
     def tocar(self, link):
         os.system("xdg-open {}".format(link)) 
         os.system("start {}".format(link))      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 '''
 #Dessa forma voce cria um variavel da classe Stack
 classePilha = Stack()

@@ -7,7 +7,7 @@ class Tree:
         self.pai = pai
         self.mae = mae
 
-#adiciona os pais a classe
+    #adiciona os pais a classe
     def addPais(self, pai=None, mae=None):
         self.pai = pai
         self.mae = mae
@@ -21,7 +21,33 @@ class Tree:
             print(self.mae.pessoa.nome)
             self.mae.mostrarTodaGeracao()
 
-            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 '''
 
 #primeiro deve-se criar uma pessoa, usando o struct do Luan C é isso, veja a sequencia

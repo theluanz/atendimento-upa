@@ -1,5 +1,8 @@
 from pessoa import Pessoa
 from BinaryTree import Tree
+
+space = ("-"*32)
+
 class Quee:
     def __init__(self):
         self.vetor = []
@@ -25,14 +28,14 @@ class Quee:
     def atender(self, quee):
         if quee.vetor:
             print("Atendimento Prioritário")
-            print("Atendimento de agora: "+quee.vetor[0].pessoa.nome)
+            print("Atendimento de agora: " + quee.vetor[0].pessoa.nome)
             del quee.vetor[0]
         elif self.vetor:
             print("Atendimento Normal")
-            print("Atendimento de agora: "+self.vetor[0].pessoa.nome)
+            print("Atendimento de agora: " + self.vetor[0].pessoa.nome)
             del self.vetor[0]    
         else:
-            print("Nenhum usuario na fila")
+            print(space + "\n|    Nenhum usuario na fila    |\n" + space)
     
     
     def printarTodos(self):
@@ -54,6 +57,47 @@ class Quee:
             tmp+=1
             print("")
         return self.vetor[int(input("Digite o index correspondente: "))]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 '''
 pessoa = Pessoa("eu", "sexo",1, 1, 12, 32, 121, "ctsus", "zap" )
 pai = Pessoa("pai", "sexo",12, 12, 12, 32, 121, "ctsus", "a" )
