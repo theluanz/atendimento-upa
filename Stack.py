@@ -13,7 +13,8 @@ class Stack:
         else:
             print("Pilha Vazia, não é possivel tocar")
     def tocar(self, link):
-        os.system("xdg-open {}".format(link))    
+        os.system("xdg-open {}".format(link)) 
+        os.system("start {}".format(link))      
 '''
 #Dessa forma voce cria um variavel da classe Stack
 classePilha = Stack()
